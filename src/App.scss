@@ -1,0 +1,55 @@
+// App.scss contains global styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Fonts
+//use mixins with import in index.html for fonts
+
+// Variables
+// $variable-name: value;
+
+body {
+  overflow-x: hidden;
+}
+
+// prettier-ignore
+h1, h2, h3, h4, h5, h6, li, a {
+      font-family: "Font 1 Name";
+      // color: $variable-name;
+    }
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+// prettier-ignore
+p, button, input, textarea {
+    font-family: "Font 2 Name";
+    // color: $variable-name;
+    font-size: 18px;
+    }
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
