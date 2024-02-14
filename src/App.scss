@@ -12,7 +12,28 @@ html {
 }
 
 // Fonts
-//use mixins with import in index.html for fonts
+// Using mixins to implement fonts from Google API import
+
+@mixin font-Bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin font-Regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-Light {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
 // Variables
 $theme-color-maroon: #9a4444;
@@ -28,10 +49,10 @@ body {
 }
 
 // prettier-ignore
-h1, h2, h3, h4, h5, h6, li, a {
-      font-family: "Font 1 Name";
-      // color: $variable-name;
-    }
+h1, h2, h3, h4, h5, h6, li, a, .router-link {
+     @include font-Bold;
+      color: $text-color-white;
+  }
 
 h1 {
   font-size: 48px;
@@ -47,12 +68,13 @@ h3 {
 
 // prettier-ignore
 p, button, input, textarea {
-    font-family: "Font 2 Name";
-    // color: $variable-name;
+  @include font-Regular;
+  color: $text-color-white;
     font-size: 18px;
     }
 
-a {
+a,
+.router-link {
   text-decoration: none;
 }
 

@@ -13,8 +13,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, li, a {
-  font-family: "Font 1 Name";
+h1, h2, h3, h4, h5, h6, li, a, .router-link {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #faf9f6;
 }
 
 h1 {
@@ -30,11 +34,16 @@ h3 {
 }
 
 p, button, input, textarea {
-  font-family: "Font 2 Name";
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #faf9f6;
   font-size: 18px;
 }
 
-a {
+a,
+.router-link {
   text-decoration: none;
 }
 
