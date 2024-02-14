@@ -21,6 +21,14 @@
     .nav-list {
       display: flex;
       gap: 50px;
+
+      li .router-link {
+        transition: all 0.3s;
+
+        &:hover {
+          color: $theme-color-yellowgreen;
+        }
+      }
     }
   }
 }

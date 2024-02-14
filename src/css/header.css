@@ -70,3 +70,9 @@ img {
   display: flex;
   gap: 50px;
 }
+.header .inner-header .nav-list li .router-link {
+  transition: all 0.3s;
+}
+.header .inner-header .nav-list li .router-link:hover {
+  color: #d6d46d;
+}
