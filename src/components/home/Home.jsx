@@ -2,6 +2,7 @@ import "../../css/home.css";
 import heroBackground from "../../assets/cafe-hero.jpg";
 import latte from "../../assets/product_images/latte.webp";
 import assortedPastries from "../../assets/product_images/assorted_pastries.jpg";
+import interior from "../../assets/interior.jpg";
 
 function Home() {
   return (
@@ -71,10 +72,12 @@ function Home() {
         </div>
       </section>
 
+      <div className="section-separator"></div>
+
       {/* Image display Section */}
       <section id="image-display">
         <div className="image-display">
-          <img src="" alt="" />
+          <img src={interior} alt="Cafe Interior" className="cafe-interior" />
         </div>
       </section>
     </div>
