@@ -10,7 +10,9 @@
 
   .hero {
     width: 100%;
-    height: calc(100vh - 80px); // Adjust for the header height
+    // Adjust for the header
+    // (otherwise header will push hero section down by it's height of 80px)
+    height: calc(100vh - 80px);
     overflow: hidden;
 
     position: relative;
@@ -18,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 14%;
+    padding-top: 13%;
     gap: 30px;
 
     // Applying a dark overlay to the hero image

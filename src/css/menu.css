@@ -23,23 +23,14 @@ h1, h2, h3, h4, h5, h6, li, a, .router-link {
 
 h1 {
   font-size: 48px;
-  font-family: "Rye", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 h2 {
   font-size: 32px;
-  font-family: "Rye", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 h3 {
   font-size: 24px;
-  font-family: "Rye", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 p, button, input, textarea {
@@ -82,4 +73,50 @@ button:hover {
 .right-side {
   width: 50%;
   height: 100%;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4dfb6;
+}
+.menu h1,
+.menu h2,
+.menu h3,
+.menu h4,
+.menu p,
+.menu li {
+  color: #212427;
+}
+.menu .heading-area {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 50px 50px;
+}
+.menu .heading-area .title {
+  padding-bottom: 20px;
+}
+.menu .heading-area .subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.menu .menu-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 35%;
+}
+.menu .menu-list .menu-category-container .menu-category-title {
+  padding-bottom: 20px;
+  font-size: 46px;
+}
+.menu .menu-list .menu-category-container .menu-item-list li {
+  padding-bottom: 5px;
+  font-size: 24px;
 }
