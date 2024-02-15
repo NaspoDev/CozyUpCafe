@@ -23,14 +23,23 @@ h1, h2, h3, h4, h5, h6, li, a, .router-link {
 
 h1 {
   font-size: 48px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2 {
   font-size: 32px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h3 {
   font-size: 24px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p, button, input, textarea {
@@ -148,11 +157,12 @@ button:hover {
   padding: 0 8%;
   line-height: 1.5;
 }
-.home .about .about-us-section .text-container h2,
-.home .about .about-us-section .text-container h3,
-.home .about .mission-statement-section .text-container h2,
-.home .about .mission-statement-section .text-container h3 {
+.home .about .about-us-section .text-container .about-us-title,
+.home .about .about-us-section .text-container .mission-statement-title,
+.home .about .mission-statement-section .text-container .about-us-title,
+.home .about .mission-statement-section .text-container .mission-statement-title {
   margin-bottom: 30px;
+  font-size: 42px;
 }
 .home .about .about-us-section .image-container,
 .home .about .mission-statement-section .image-container {

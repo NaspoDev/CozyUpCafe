@@ -30,7 +30,7 @@ function Home() {
         <div className="about">
           <div className="about-us-section">
             <div className="left-side text-container">
-              <h2>About Us</h2>
+              <h2 className="about-us-title">About Us</h2>
               <p>
                 CozyUpCafe is a community-focused coffee shop that serves the
                 best coffee in town. We are committed to providing a warm and
@@ -57,7 +57,7 @@ function Home() {
               />
             </div>
             <div className="right-side text-container">
-              <h3>Mission Statement</h3>
+              <h3 className="mission-statement-title">Mission Statement</h3>
               <p>
                 &quot;Our mission at Cozy Cup Cafe is to create a welcoming
                 environment where every cup feels like home. We strive to serve
