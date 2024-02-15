@@ -23,14 +23,23 @@ h1, h2, h3, h4, h5, h6, li, a, .router-link {
 
 h1 {
   font-size: 48px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2 {
   font-size: 32px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h3 {
   font-size: 24px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p, button, input, textarea {
@@ -98,6 +107,7 @@ button:hover {
 }
 .menu .heading-area .title {
   padding-bottom: 20px;
+  font-size: 56px;
 }
 .menu .heading-area .subtitle {
   font-family: "Montserrat", sans-serif;
@@ -110,13 +120,16 @@ button:hover {
   height: auto;
   display: flex;
   flex-direction: column;
-  padding-left: 35%;
+  padding-left: 30%;
+}
+.menu .menu-list .menu-category-container {
+  padding-bottom: 50px;
 }
 .menu .menu-list .menu-category-container .menu-category-title {
   padding-bottom: 20px;
-  font-size: 46px;
+  font-size: 42px;
 }
 .menu .menu-list .menu-category-container .menu-item-list li {
   padding-bottom: 5px;
-  font-size: 24px;
+  font-size: 22px;
 }

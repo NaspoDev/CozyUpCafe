@@ -20,6 +20,51 @@ function Menu() {
             ))}
           </ul>
         </div>
+
+        <div className="pastries-container menu-category-container">
+          <h2 className="menu-category-title">Pastries</h2>
+          <ul className="pastries-list menu-item-list">
+            {menuItems.pastries.map((pastry, index) => (
+              <li key={index}>{pastry}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="breakfast-container menu-category-container">
+          <h2 className="menu-category-title">Breakfast</h2>
+          <ul className="breakfast-list menu-item-list">
+            {menuItems.breakfast.map((breakfast, index) => (
+              <li key={index}>{breakfast}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="lunch-container menu-category-container">
+          <h2 className="menu-category-title">Lunch</h2>
+          <ul className="lunch-list menu-item-list">
+            {menuItems.lunch.map((lunch, index) => (
+              <li key={index}>{lunch}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="desserts-container menu-category-container">
+          <h2 className="menu-category-title">Desserts</h2>
+          <ul className="desserts-list menu-item-list">
+            {menuItems.desserts.map((desserts, index) => (
+              <li key={index}>{desserts}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="specialty-drinks-container menu-category-container">
+          <h2 className="menu-category-title">Specialty Drinks</h2>
+          <ul className="specialty-drinks-list menu-item-list">
+            {menuItems.specialtyDrinks.map((drink, index) => (
+              <li key={index}>{drink}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

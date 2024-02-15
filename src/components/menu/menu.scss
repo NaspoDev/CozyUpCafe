@@ -28,6 +28,7 @@
 
     .title {
       padding-bottom: 20px;
+      font-size: 56px;
     }
 
     .subtitle {
@@ -40,17 +41,19 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-left: 35%;
+    padding-left: 30%;
 
     .menu-category-container {
+      padding-bottom: 50px;
+
       .menu-category-title {
         padding-bottom: 20px;
-        font-size: 46px;
+        font-size: 42px;
       }
 
       .menu-item-list li {
         padding-bottom: 5px;
-        font-size: 24px;
+        font-size: 22px;
       }
     }
   }
