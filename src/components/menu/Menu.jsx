@@ -1,15 +1,27 @@
 import "../../css/menu.css";
 import * as menuItems from "./menu-items";
+import largePastryDisplay from "../../assets/product_images/large_product_display.jpg";
+import coffee from "../../assets/product_images/coffee2.png";
+import pastryLong from "../../assets/product_images/pastry_long.jpg";
+import turkeySandwich from "../../assets/product_images/turkey_sandwich.jpg";
+import cheesecake from "../../assets/product_images/cheesecake.jpg";
 
 function Menu() {
   return (
     <div className="menu">
       <div className="heading-area">
+        <img
+          src={largePastryDisplay}
+          alt="Large Pastry Display"
+          className="menu-heading-background-image"
+        />
         <h1 className="title">Our Menu</h1>
         <h3 className="subtitle">
           Browse a variety of beautifully brewed coffees and homemade pastries.
         </h3>
       </div>
+
+      <div className="section-separator"></div>
 
       <div className="menu-list">
         <div className="beverages-container menu-category-container">

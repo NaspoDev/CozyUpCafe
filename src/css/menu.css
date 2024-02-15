@@ -89,24 +89,36 @@ button:hover {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: #f4dfb6;
-}
-.menu h1,
-.menu h2,
-.menu h3,
-.menu h4,
-.menu p,
-.menu li {
-  color: #212427;
 }
 .menu .heading-area {
   width: 100%;
-  height: auto;
-  text-align: center;
-  padding: 50px 50px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.menu .heading-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.menu .heading-area .menu-heading-background-image {
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  left: 0;
+  z-index: -2;
 }
 .menu .heading-area .title {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 56px;
 }
 .menu .heading-area .subtitle {
@@ -115,12 +127,25 @@ button:hover {
   font-weight: 400;
   font-style: normal;
 }
+.menu .section-separator {
+  height: 20px;
+}
 .menu .menu-list {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   padding-left: 30%;
+  padding-top: 50px;
+  background-color: #f4dfb6;
+}
+.menu .menu-list h1,
+.menu .menu-list h2,
+.menu .menu-list h3,
+.menu .menu-list h4,
+.menu .menu-list p,
+.menu .menu-list li {
+  color: #212427;
 }
 .menu .menu-list .menu-category-container {
   padding-bottom: 50px;
