@@ -6,6 +6,8 @@
   width: 100%;
   height: 80px;
   padding: 0px 15%;
+  position: fixed;
+  z-index: 10;
   background-color: $theme-color-maroon;
 
   .inner-header {

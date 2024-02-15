@@ -81,3 +81,28 @@ a,
 img {
   max-width: 100%;
 }
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  background-color: $theme-color-maroon;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: $theme-color-yellowgreen;
+    color: $text-color-black;
+  }
+}
+
+.section-separator {
+  width: 100%;
+  height: 40px;
+  background-color: $text-color-black;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  height: 100%;
+}
