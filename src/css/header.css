@@ -69,6 +69,12 @@ button:hover {
   background-color: #212427;
 }
 
+.left-side,
+.right-side {
+  width: 50%;
+  height: 100%;
+}
+
 .header {
   width: 100%;
   height: 80px;
@@ -95,4 +101,9 @@ button:hover {
 }
 .header .inner-header .nav-list li .router-link:hover {
   color: #d6d46d;
+}
+
+.header-placeholder {
+  width: 100%;
+  height: 80px;
 }
