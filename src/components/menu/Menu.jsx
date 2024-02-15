@@ -2,9 +2,8 @@ import "../../css/menu.css";
 import * as menuItems from "./menu-items";
 import largePastryDisplay from "../../assets/product_images/large_product_display.jpg";
 import coffee from "../../assets/product_images/coffee2.png";
-import pastryLong from "../../assets/product_images/pastry_long.jpg";
+import assortedPastries from "../../assets/product_images/assorted_pastries2.jpg";
 import turkeySandwich from "../../assets/product_images/turkey_sandwich.jpg";
-import cheesecake from "../../assets/product_images/cheesecake.jpg";
 
 function Menu() {
   return (
@@ -31,6 +30,7 @@ function Menu() {
               <li key={index}>{beverage}</li>
             ))}
           </ul>
+          <img src={coffee} alt="Coffee" className="coffee-image" />
         </div>
 
         <div className="pastries-container menu-category-container">
@@ -40,6 +40,14 @@ function Menu() {
               <li key={index}>{pastry}</li>
             ))}
           </ul>
+        </div>
+
+        <div className="large-image-container-1">
+          <img
+            src={assortedPastries}
+            alt="Assorted Pastries"
+            className="assorted-pastries-image"
+          />
         </div>
 
         <div className="breakfast-container menu-category-container">
@@ -58,6 +66,11 @@ function Menu() {
               <li key={index}>{lunch}</li>
             ))}
           </ul>
+          <img
+            src={turkeySandwich}
+            alt="Turkey Sandwich"
+            className="turkey-sandwich-image"
+          />
         </div>
 
         <div className="desserts-container menu-category-container">

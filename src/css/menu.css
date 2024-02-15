@@ -135,8 +135,7 @@ button:hover {
   height: auto;
   display: flex;
   flex-direction: column;
-  padding-left: 30%;
-  padding-top: 50px;
+  padding-top: 70px;
   background-color: #f4dfb6;
 }
 .menu .menu-list h1,
@@ -149,6 +148,8 @@ button:hover {
 }
 .menu .menu-list .menu-category-container {
   padding-bottom: 50px;
+  padding-left: 30%;
+  position: relative;
 }
 .menu .menu-list .menu-category-container .menu-category-title {
   padding-bottom: 20px;
@@ -157,4 +158,27 @@ button:hover {
 .menu .menu-list .menu-category-container .menu-item-list li {
   padding-bottom: 5px;
   font-size: 22px;
+}
+.menu .menu-list .menu-category-container .coffee-image,
+.menu .menu-list .menu-category-container .turkey-sandwich-image {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+  width: 400px;
+  border: 10px solid #212427;
+  border-style: double;
+}
+.menu .menu-list .large-image-container-1 {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+  border-top: 20px solid #212427;
+  border-bottom: 20px solid #212427;
+}
+.menu .menu-list .large-image-container-1 img {
+  width: 100%;
+  position: absolute;
+  top: -400px;
 }
