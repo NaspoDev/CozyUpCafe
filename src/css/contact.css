@@ -84,57 +84,62 @@ button:hover {
   height: 100%;
 }
 
-.footer {
+.contact {
   width: 100%;
-  height: 200px;
-  padding: 0px 25%;
-  background-color: #9a4444;
+  height: 800px;
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  background-color: #f4dfb6;
 }
-.footer .inner-footer {
-  height: 100%;
+.contact h1,
+.contact h2,
+.contact h3,
+.contact a,
+.contact p {
+  color: #212427;
+}
+.contact .heading-container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.footer .inner-footer .footer-logo {
-  width: 135px;
+.contact .content-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer .inner-footer .right-side-content {
+.contact .content-area .embedded-map-container {
+  width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .content-area .embedded-map-container iframe {
+  width: 600px;
+  height: 450px;
+}
+.contact .content-area .contact-info-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border: 1px solid red;
+}
+.contact .content-area .contact-info-container .basic-info-container {
   width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-}
-.footer .inner-footer .right-side-content .links-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.footer .inner-footer .right-side-content .links-container .nav-list {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  border: 1px solid blue;
 }
-.footer .inner-footer .right-side-content .links-container .nav-list li .router-link {
-  transition: all 0.3s;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-.footer .inner-footer .right-side-content .links-container .nav-list li .router-link:hover {
-  color: #d6d46d;
-}
-.footer .inner-footer .right-side-content .links-container .socials-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-.footer .inner-footer .right-side-content .links-container .socials-container img {
-  width: 30px;
+.contact .content-area .contact-info-container .socials-container img {
+  width: 100px;
 }

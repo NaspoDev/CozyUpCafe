@@ -23,14 +23,23 @@ h1, h2, h3, h4, h5, h6, li, a, .router-link {
 
 h1 {
   font-size: 48px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2 {
   font-size: 32px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h3 {
   font-size: 24px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p, button, input, textarea {
