@@ -5,55 +5,78 @@
 .contact {
   width: 100%;
   height: 800px;
-  display: grid;
-  grid-template-rows: 1fr 6fr;
-  background-color: $theme-color-beige;
+  display: flex;
+  flex-direction: column;
 
-  h1,
-  h2,
-  h3,
-  a,
-  p {
-    color: $text-color-black;
+  position: relative;
+  overflow: hidden;
+
+  .background-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.4);
   }
 
   .heading-container {
     width: 100%;
+    height: 20%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    margin-bottom: 40px;
   }
 
   .content-area {
     width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 200px;
 
     .embedded-map-container {
-      width: 50%;
+      width: auto;
       height: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-end;
+      align-items: flex-start;
 
       iframe {
         width: 600px;
         height: 450px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
       }
     }
 
     .contact-info-container {
-      width: 50%;
+      width: auto;
       height: 100%;
 
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 30px;
 
-      border: 1px solid red;
+      h3 {
+        @include font-Bold;
+      }
+
+      p,
+      a {
+        font-size: 22px;
+        @include font-Light;
+      }
 
       .basic-info-container {
         width: auto;
@@ -63,12 +86,31 @@
         justify-content: center;
         align-items: flex-start;
 
-        border: 1px solid blue;
+        .info-piece-container {
+          margin-bottom: 40px;
+
+          a {
+            text-decoration: underline;
+            @include font-Regular;
+          }
+        }
       }
 
       .socials-container {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h3 {
+          margin-bottom: 10px;
+        }
+
         img {
-          width: 100px;
+          width: 40px;
+          margin-right: 20px;
         }
       }
     }

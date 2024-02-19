@@ -1,12 +1,22 @@
 import instagramIcon from "../../assets/instagram_icon.png";
 import facebookIcon from "../../assets/facebook_icon.webp";
+import assortedMenuDisplay from "../../assets/assorted_menu_display.jpeg";
 import "../../css/contact.css";
 
 function Contact() {
   return (
     <div className="contact">
+      {/* background image */}
+      <img
+        src={assortedMenuDisplay}
+        alt="Assorted menu display"
+        className="background-image"
+      />
+
+      {/* page content */}
       <div className="heading-container">
         <h1>Contact Us</h1>
+        <p>Get in touch or come on by! We&apos;d love to have you.</p>
       </div>
       <div className="content-area">
         <div className="embedded-map-container">
@@ -18,20 +28,27 @@ function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+
         <div className="contact-info-container">
           <div className="basic-info-container">
-            <p className="phone-number">Phone: 555-123-4567</p>
-            <a href="info@cozycupcafe.com" className="email">
-              info@cozycupcafe.com
-            </a>
-            <br />
-            <p className="address">
-              We&apos;re located at 123 Main Street, Willow Creek, CA
-            </p>
+            <div className="phone-number-container info-piece-container">
+              <h3>Phone Number</h3>
+              <p>555-123-4567</p>
+            </div>
+            <div className="email-container info-piece-container">
+              <h3>Email</h3>
+              <a href="mailto:info@cozycupcafe.com" className="email">
+                info@cozycupcafe.com
+              </a>
+            </div>
+            <div className="address-container info-piece-container">
+              <h3>Address</h3>
+              <p>We&apos;re located at 123 Main Street, Willow Creek, CA</p>
+            </div>
           </div>
 
           <div className="socials-container">
-            <p>Follow our socials!</p>
+            <h3>Follow our socials!</h3>
             <div className="socials-icons-container">
               <a href="https://www.instagram.com">
                 <img src={instagramIcon} alt="Instagram" />
