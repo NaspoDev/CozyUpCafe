@@ -1,6 +1,6 @@
 import instagramIcon from "../../assets/instagram_icon.png";
 import facebookIcon from "../../assets/facebook_icon.webp";
-import assortedMenuDisplay from "../../assets/assorted_menu_display.jpeg";
+import assortedMenuDisplay from "../../assets//product_images/assorted_menu_display.jpeg";
 import "../../css/contact.css";
 
 function Contact() {
