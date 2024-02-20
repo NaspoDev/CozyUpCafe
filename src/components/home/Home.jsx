@@ -1,7 +1,6 @@
 import "../../css/home.css";
 import heroBackground from "../../assets/cafe-hero.jpg";
-import latte from "../../assets/product_images/latte.webp";
-import assortedPastries from "../../assets/product_images/assorted_pastries.jpg";
+import coffeeAndPastry from "../../assets/product_images/coffee_and_pastry.jpeg";
 import interior from "../../assets/interior.jpg";
 
 function Home() {
@@ -30,37 +29,20 @@ function Home() {
       {/* About Section */}
       <section id="about">
         <div className="about">
-          <div className="about-us-section">
-            <div className="left-side text-container">
-              <h2 className="about-us-title">About Us</h2>
-              <p>
+          <div className="text-container">
+            <div className="border-div">
+              <h2 className="about-us-title">
+                Community Focused <br />
+                Coffee Shop
+              </h2>
+              <p className="about-us-text">
                 CozyUpCafe is a community-focused coffee shop that serves the
                 best coffee in town. We are committed to providing a warm and
                 inviting space for people to connect, relax, and enjoy a great
                 cup of coffee.
               </p>
-            </div>
 
-            <div className="right-side image-container">
-              <img
-                src={latte}
-                alt="Latte"
-                className="latte-image product-image"
-              />
-            </div>
-          </div>
-
-          <div className="mission-statement-section">
-            <div className="left-side image-container">
-              <img
-                src={assortedPastries}
-                alt="Assorted Pastries"
-                className="assorted-pastries-image product-image"
-              />
-            </div>
-            <div className="right-side text-container">
-              <h3 className="mission-statement-title">Mission Statement</h3>
-              <p>
+              <p className="mission-statement">
                 &quot;Our mission at Cozy Cup Cafe is to create a welcoming
                 environment where every cup feels like home. We strive to serve
                 the highest quality coffee and food, sourced locally whenever
@@ -71,6 +53,8 @@ function Home() {
               </p>
             </div>
           </div>
+
+          <img src={coffeeAndPastry} alt="Coffee and Pastry" />
         </div>
       </section>
 

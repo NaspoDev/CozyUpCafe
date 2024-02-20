@@ -128,52 +128,46 @@ button:hover {
 }
 .home .about {
   width: 100%;
-  height: 800px;
+  height: 700px;
   background-color: #f4dfb6;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  flex-direction: row;
 }
 .home .about h2,
 .home .about h3,
 .home .about p {
   color: #212427;
 }
-.home .about .about-us-section,
-.home .about .mission-statement-section {
+.home .about .text-container {
+  width: 50%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 30px 30px;
 }
-.home .about .about-us-section .text-container,
-.home .about .mission-statement-section .text-container {
+.home .about .text-container .border-div {
+  border: 5px dotted #de8f5f;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 8%;
-  line-height: 1.5;
+  text-align: center;
+  padding: 0px 10%;
 }
-.home .about .about-us-section .text-container .about-us-title,
-.home .about .about-us-section .text-container .mission-statement-title,
-.home .about .mission-statement-section .text-container .about-us-title,
-.home .about .mission-statement-section .text-container .mission-statement-title {
-  margin-bottom: 30px;
+.home .about .text-container .border-div .about-us-title {
   font-size: 42px;
+  margin-bottom: 30px;
+  color: #de8f5f;
+  filter: brightness(0.9);
 }
-.home .about .about-us-section .image-container,
-.home .about .mission-statement-section .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home .about .text-container .border-div .about-us-text {
+  margin-bottom: 30px;
 }
-.home .about .about-us-section .image-container .product-image,
-.home .about .mission-statement-section .image-container .product-image {
-  width: 300px;
-  border-radius: 50%;
+.home .about img {
+  height: 100%;
 }
 .home .image-display {
   width: 100%;
