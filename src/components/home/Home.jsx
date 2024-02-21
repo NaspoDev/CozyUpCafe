@@ -16,15 +16,11 @@ function Home() {
           />
           <h1 className="company-name">CozyUpCafe</h1>
           <h2 className="tagline">Crafting Community, One Cup at a Time</h2>
-          <a href="#about-anchor">
+          <a href="#about">
             <button className="about-us-button">About Us</button>
           </a>
         </div>
       </section>
-
-      {/* Make this the about anchor because header would cut content off 
-      if the actual about <section> is the anchor. */}
-      <div className="section-separator" id="about-anchor"></div>
 
       {/* About Section */}
       <section id="about">
