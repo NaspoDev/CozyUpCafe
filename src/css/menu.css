@@ -135,7 +135,6 @@ button:hover {
   height: auto;
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
   background-color: #f4dfb6;
 }
 .menu .menu-list h1,
@@ -146,21 +145,42 @@ button:hover {
 .menu .menu-list li {
   color: #212427;
 }
-.menu .menu-list .menu-category-container {
-  padding-bottom: 50px;
-  padding-left: 30%;
-  position: relative;
+.menu .menu-list .menu-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
 }
-.menu .menu-list .menu-category-container .menu-category-title {
+.menu .menu-list .menu-section .left-side,
+.menu .menu-list .menu-section .right-side {
+  width: 50%;
+  height: 100%;
+}
+.menu .menu-list .menu-section .menu-paper-background {
+  width: 60%;
+  height: auto;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.menu .menu-list .menu-section .menu-paper-background .menu-paper-heading {
+  align-self: center;
+  margin-top: 20px;
+}
+.menu .menu-list .menu-section .menu-paper-background .menu-category-container {
   padding-bottom: 20px;
-  font-size: 42px;
 }
-.menu .menu-list .menu-category-container .menu-item-list li {
+.menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-category-title {
+  padding-bottom: 20px;
+}
+.menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-item-list li {
   padding-bottom: 5px;
-  font-size: 22px;
 }
-.menu .menu-list .menu-category-container .coffee-image,
-.menu .menu-list .menu-category-container .turkey-sandwich-image {
+.menu .menu-list .menu-section .menu-paper-background .menu-category-container .coffee-image,
+.menu .menu-list .menu-section .menu-paper-background .menu-category-container .turkey-sandwich-image {
   position: absolute;
   top: 50px;
   right: 250px;
