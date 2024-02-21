@@ -15,9 +15,9 @@ function Menu() {
           className="menu-heading-background-image"
         />
         <h1 className="title">Our Menu</h1>
-        <h3 className="subtitle">
+        <h2 className="subtitle">
           Browse a variety of beautifully brewed coffees and homemade pastries.
-        </h3>
+        </h2>
       </div>
 
       <div className="section-separator"></div>
@@ -29,7 +29,7 @@ function Menu() {
             <div className="menu-paper-background">
               <h2 className="menu-paper-heading">Cafe Essentials</h2>
               <div className="beverages-container menu-category-container">
-                <h2 className="menu-category-title">Beverages</h2>
+                <h3 className="menu-category-title">Beverages</h3>
                 <ul className="beverages-list menu-item-list">
                   {menuItems.beverages.map((beverage, index) => (
                     <li key={index}>{beverage}</li>
@@ -37,7 +37,7 @@ function Menu() {
                 </ul>
               </div>
               <div className="pastries-container menu-category-container">
-                <h2 className="menu-category-title">Pastries</h2>
+                <h3 className="menu-category-title">Pastries</h3>
                 <ul className="pastries-list menu-item-list">
                   {menuItems.pastries.map((pastry, index) => (
                     <li key={index}>{pastry}</li>
@@ -74,17 +74,15 @@ function Menu() {
             <div className="menu-paper-background">
               <h2 className="menu-paper-heading">Food</h2>
               <div className="breakfast-container menu-category-container">
-                <h2 className="menu-category-title">Breakfast</h2>
+                <h3 className="menu-category-title">Breakfast</h3>
                 <ul className="breakfast-list menu-item-list">
                   {menuItems.breakfast.map((breakfast, index) => (
                     <li key={index}>{breakfast}</li>
                   ))}
                 </ul>
               </div>
-
-              <h2 className="menu-paper-heading">Sweets & Specialties</h2>
               <div className="lunch-container menu-category-container">
-                <h2 className="menu-category-title">Lunch</h2>
+                <h3 className="menu-category-title">Lunch</h3>
                 <ul className="lunch-list menu-item-list">
                   {menuItems.lunch.map((lunch, index) => (
                     <li key={index}>{lunch}</li>
@@ -92,8 +90,9 @@ function Menu() {
                 </ul>
               </div>
 
+              <h2 className="menu-paper-heading">Sweets & Specialties</h2>
               <div className="desserts-container menu-category-container">
-                <h2 className="menu-category-title">Desserts</h2>
+                <h3 className="menu-category-title">Desserts</h3>
                 <ul className="desserts-list menu-item-list">
                   {menuItems.desserts.map((desserts, index) => (
                     <li key={index}>{desserts}</li>
@@ -102,7 +101,7 @@ function Menu() {
               </div>
 
               <div className="specialty-drinks-container menu-category-container">
-                <h2 className="menu-category-title">Specialty Drinks</h2>
+                <h3 className="menu-category-title">Specialty Drinks</h3>
                 <ul className="specialty-drinks-list menu-item-list">
                   {menuItems.specialtyDrinks.map((drink, index) => (
                     <li key={index}>{drink}</li>

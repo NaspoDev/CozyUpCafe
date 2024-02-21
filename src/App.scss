@@ -41,6 +41,12 @@ html {
   font-style: normal;
 }
 
+@mixin font-Menu {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 // Variables
 $theme-color-maroon: #9a4444;
 $theme-color-copper: #de8f5f;

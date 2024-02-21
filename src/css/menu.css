@@ -145,6 +145,14 @@ button:hover {
 .menu .menu-list li {
   color: #212427;
 }
+.menu .menu-list p,
+.menu .menu-list a,
+.menu .menu-list li {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
 .menu .menu-list .menu-section {
   width: 100%;
   height: auto;
@@ -155,26 +163,46 @@ button:hover {
 .menu .menu-list .menu-section .right-side {
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu .menu-list .menu-section .menu-paper-background {
-  width: 60%;
+  width: 70%;
   height: auto;
   background-color: #faf9f6;
+  border: 10px double #212427;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   margin: 30px 0px;
+  padding: 0px 50px;
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-paper-heading {
   align-self: center;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container {
   padding-bottom: 20px;
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-category-title {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+}
+.menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-category-title::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 120%;
+  height: 40%;
+  background-color: rgba(184, 115, 51, 0.3);
+  z-index: -1;
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-item-list li {
   padding-bottom: 5px;

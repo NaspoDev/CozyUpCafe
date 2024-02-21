@@ -73,6 +73,13 @@
       color: $text-color-black;
     }
 
+    p,
+    a,
+    li {
+      @include font-Menu;
+      font-size: large;
+    }
+
     // General menu-list element styles
 
     .menu-section {
@@ -85,12 +92,16 @@
       .right-side {
         width: 50%;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .menu-paper-background {
-        width: 60%;
+        width: 70%;
         height: auto;
         background-color: $text-color-white;
+        border: 10px double $text-color-black;
 
         display: flex;
         flex-direction: column;
@@ -98,17 +109,35 @@
         justify-content: center;
 
         margin: 30px 0px;
+        padding: 0px 50px;
 
         .menu-paper-heading {
           align-self: center;
           margin-top: 20px;
+          margin-bottom: 10px;
         }
 
         .menu-category-container {
           padding-bottom: 20px;
 
           .menu-category-title {
-            padding-bottom: 20px;
+            padding-bottom: 10px;
+            // @include font-Bold;
+
+            width: fit-content;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 40%;
+              left: 0;
+              width: 120%;
+              height: 40%;
+              background-color: rgba(184, 115, 51, 0.3);
+              z-index: -1;
+            }
           }
 
           .menu-item-list li {
@@ -133,8 +162,6 @@
 
     .menu-section-1 {
       .left-side {
-        .menu-paper-background {
-        }
       }
     }
 
