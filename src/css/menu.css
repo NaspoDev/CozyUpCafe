@@ -189,6 +189,10 @@ button:hover {
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-category-title {
   padding-bottom: 10px;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
@@ -197,10 +201,10 @@ button:hover {
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-category-title::before {
   content: "";
   position: absolute;
-  top: 40%;
+  top: 0;
   left: 0;
-  width: 120%;
-  height: 40%;
+  width: 110%;
+  height: 90%;
   background-color: rgba(184, 115, 51, 0.3);
   z-index: -1;
 }

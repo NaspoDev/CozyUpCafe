@@ -122,7 +122,8 @@
 
           .menu-category-title {
             padding-bottom: 10px;
-            // @include font-Bold;
+            @include font-Menu;
+            font-size: 28px;
 
             width: fit-content;
             position: relative;
@@ -131,10 +132,12 @@
             &::before {
               content: "";
               position: absolute;
-              top: 40%;
+              // top: 40%;
+              top: 0;
               left: 0;
-              width: 120%;
-              height: 40%;
+              width: 110%;
+              height: 90%;
+              // height: 40%;
               background-color: rgba(184, 115, 51, 0.3);
               z-index: -1;
             }
