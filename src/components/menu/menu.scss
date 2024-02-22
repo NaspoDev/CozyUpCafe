@@ -160,17 +160,6 @@
               }
             }
           }
-
-          // TODO: move this:
-          .coffee-image,
-          .turkey-sandwich-image {
-            position: absolute;
-            top: 50px;
-            right: 250px;
-            width: 400px;
-            border: 10px solid $text-color-black;
-            border-style: double;
-          }
         }
       }
     }
@@ -178,7 +167,28 @@
     // Specific menu-list element styles
 
     .menu-section-1 {
-      .left-side {
+      .right-side {
+        position: relative;
+        height: auto;
+
+        img {
+          position: absolute;
+        }
+
+        .coffee-image {
+          width: 800px;
+          top: 8%;
+          right: 10%;
+          border: 10px solid $text-color-black;
+        }
+
+        .assorted-pastries-image {
+          height: 400px;
+          bottom: 5%;
+          left: -8%;
+          border: 20px solid $text-color-white;
+          border-radius: 50%;
+        }
       }
     }
 

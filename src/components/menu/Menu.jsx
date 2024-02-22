@@ -1,9 +1,12 @@
 import "../../css/menu.css";
 import * as menuItems from "./menu-items";
+
+// Image imports
 import largePastryDisplay from "../../assets/product_images/large_product_display.jpg";
 import coffee from "../../assets/product_images/coffee2.png";
-import assortedPastries from "../../assets/product_images/assorted_pastries2.jpg";
+import assortedPastries2 from "../../assets/product_images/assorted_pastries2.jpg";
 import turkeySandwich from "../../assets/product_images/turkey_sandwich.jpg";
+import assortedPastries from "../../assets/product_images/assorted_pastries.jpg";
 
 function Menu() {
   const dollarFormat = new Intl.NumberFormat("en-US", {
@@ -35,6 +38,7 @@ function Menu() {
       <div className="menu-list">
         {/* Menu section 1 */}
         <div className="menu-section-1 menu-section">
+          {/* Left side, for menu */}
           <div className="left-side">
             <div className="menu-paper-background">
               <h2 className="menu-paper-heading">Cafe Essentials</h2>
@@ -69,15 +73,21 @@ function Menu() {
             </div>
           </div>
 
+          {/* Right side, for images */}
           <div className="right-side">
             <img src={coffee} alt="Coffee" className="coffee-image" />
+            <img
+              src={assortedPastries}
+              alt="Assorted Pastries"
+              className="assorted-pastries-image"
+            />
           </div>
         </div>
 
         {/* Large Image Divider */}
         <div className="large-image-container-1">
           <img
-            src={assortedPastries}
+            src={assortedPastries2}
             alt="Assorted Pastries"
             className="assorted-pastries-image"
           />
@@ -85,6 +95,7 @@ function Menu() {
 
         {/* Menu Section 2 */}
         <div className="menu-section-2 menu-section">
+          {/* Left side, for images */}
           <div className="left-side">
             <img
               src={turkeySandwich}
@@ -92,6 +103,8 @@ function Menu() {
               className="turkey-sandwich-image"
             />
           </div>
+
+          {/* Right side, for menu */}
           <div className="right-side">
             <div className="menu-paper-background">
               <h2 className="menu-paper-heading">Food</h2>

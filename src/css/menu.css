@@ -223,14 +223,25 @@ button:hover {
   overflow: hidden;
   text-overflow: clip;
 }
-.menu .menu-list .menu-section .menu-paper-background .menu-category-container .coffee-image,
-.menu .menu-list .menu-section .menu-paper-background .menu-category-container .turkey-sandwich-image {
+.menu .menu-list .menu-section-1 .right-side {
+  position: relative;
+  height: auto;
+}
+.menu .menu-list .menu-section-1 .right-side img {
   position: absolute;
-  top: 50px;
-  right: 250px;
-  width: 400px;
+}
+.menu .menu-list .menu-section-1 .right-side .coffee-image {
+  width: 800px;
+  top: 8%;
+  right: 10%;
   border: 10px solid #212427;
-  border-style: double;
+}
+.menu .menu-list .menu-section-1 .right-side .assorted-pastries-image {
+  height: 400px;
+  bottom: 5%;
+  left: -8%;
+  border: 20px solid #faf9f6;
+  border-radius: 50%;
 }
 .menu .menu-list .large-image-container-1 {
   width: 100%;
