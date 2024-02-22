@@ -12,6 +12,10 @@ function Menu() {
     currencyDisplay: "narrowSymbol",
   });
 
+  // Dots for separating menu item names and prices. Will cut off automatically to fit size.
+  const dots =
+    "..................................................................";
+
   return (
     <div className="menu">
       <div className="heading-area">
@@ -39,7 +43,11 @@ function Menu() {
                 <ul className="beverages-list menu-item-list">
                   {menuItems.beverages.map((item, index) => (
                     <li key={index}>
-                      {item.name} - {dollarFormat.format(item.price)}
+                      <p className="menu-item-name">{item.name}</p>
+                      <p className="dots-price-separator">{dots}</p>
+                      <p className="menu-item-price">
+                        {dollarFormat.format(item.price)}
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -49,7 +57,11 @@ function Menu() {
                 <ul className="pastries-list menu-item-list">
                   {menuItems.pastries.map((item, index) => (
                     <li key={index}>
-                      {item.name} - {dollarFormat.format(item.price)}
+                      <p className="menu-item-name">{item.name}</p>
+                      <p className="dots-price-separator">{dots}</p>
+                      <p className="menu-item-price">
+                        {dollarFormat.format(item.price)}
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -88,7 +100,11 @@ function Menu() {
                 <ul className="breakfast-list menu-item-list">
                   {menuItems.breakfast.map((item, index) => (
                     <li key={index}>
-                      {item.name} - {dollarFormat.format(item.price)}
+                      <p className="menu-item-name">{item.name}</p>
+                      <p className="dots-price-separator">{dots}</p>
+                      <p className="menu-item-price">
+                        {dollarFormat.format(item.price)}
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -98,7 +114,11 @@ function Menu() {
                 <ul className="lunch-list menu-item-list">
                   {menuItems.lunch.map((item, index) => (
                     <li key={index}>
-                      {item.name} - {dollarFormat.format(item.price)}
+                      <p className="menu-item-name">{item.name}</p>
+                      <p className="dots-price-separator">{dots}</p>
+                      <p className="menu-item-price">
+                        {dollarFormat.format(item.price)}
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -110,7 +130,11 @@ function Menu() {
                 <ul className="desserts-list menu-item-list">
                   {menuItems.desserts.map((item, index) => (
                     <li key={index}>
-                      {item.name} - {dollarFormat.format(item.price)}
+                      <p className="menu-item-name">{item.name}</p>
+                      <p className="dots-price-separator">{dots}</p>
+                      <p className="menu-item-price">
+                        {dollarFormat.format(item.price)}
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -121,7 +145,11 @@ function Menu() {
                 <ul className="specialty-drinks-list menu-item-list">
                   {menuItems.specialtyDrinks.map((item, index) => (
                     <li key={index}>
-                      {item.name} - {dollarFormat.format(item.price)}
+                      <p className="menu-item-name">{item.name}</p>
+                      <p className="dots-price-separator">{dots}</p>
+                      <p className="menu-item-price">
+                        {dollarFormat.format(item.price)}
+                      </p>
                     </li>
                   ))}
                 </ul>

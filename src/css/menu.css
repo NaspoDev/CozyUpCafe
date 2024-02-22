@@ -186,6 +186,7 @@ button:hover {
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container {
   padding-bottom: 20px;
+  width: 100%;
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-category-title {
   padding-bottom: 10px;
@@ -210,6 +211,17 @@ button:hover {
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-item-list li {
   padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-item-list li .dots-price-separator {
+  padding: 0px 5px;
+  margin-right: 5px;
+  letter-spacing: 5px;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: clip;
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .coffee-image,
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .turkey-sandwich-image {

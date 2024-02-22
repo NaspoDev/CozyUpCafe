@@ -119,6 +119,7 @@
 
         .menu-category-container {
           padding-bottom: 20px;
+          width: 100%;
 
           .menu-category-title {
             padding-bottom: 10px;
@@ -142,8 +143,22 @@
             }
           }
 
-          .menu-item-list li {
-            padding-bottom: 5px;
+          .menu-item-list {
+            li {
+              padding-bottom: 5px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+
+              .dots-price-separator {
+                padding: 0px 5px;
+                margin-right: 5px; // because dots overflow, padding right doesn't work.
+                letter-spacing: 5px;
+                flex: 1; // adjust width automatically to fit the space between name and price.
+                overflow: hidden;
+                text-overflow: clip;
+              }
+            }
           }
 
           // TODO: move this:
