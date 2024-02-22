@@ -23,7 +23,7 @@ export const pastries = [
 
 export const breakfast = [
   {
-    name: "Breakfast Sandwiches (Egg, Cheese, Bacon/Sausage on English Muffin/Biscuit)",
+    name: "Breakfast Sandwiches (Egg, Cheese, Bacon/Sausage)",
     price: 15,
   },
   { name: "Bagels (Plain, Everything) with Cream Cheese", price: 10 },
@@ -46,9 +46,10 @@ export const desserts = [
 
 export const specialtyDrinks = [
   {
-    name: "Seasonal Specialty Drinks (Pumpkin Spice Latte, Peppermint Mocha)",
+    name: "Pumpkin Spice Latte (Seasonal)",
     price: 5.5,
   },
+  { name: "Peppermint Mocha (Seasonal)", price: 5.5 },
   { name: "Iced Coffee", price: 3.5 },
   { name: "Frappuccino", price: 5.5 },
   { name: "Smoothies (Fruit, Green)", price: 6.5 },
