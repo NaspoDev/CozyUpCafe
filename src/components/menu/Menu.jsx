@@ -9,6 +9,7 @@ function Menu() {
   const dollarFormat = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "CAD",
+    currencyDisplay: "narrowSymbol",
   });
 
   return (
@@ -36,16 +37,20 @@ function Menu() {
               <div className="beverages-container menu-category-container">
                 <h3 className="menu-category-title">Beverages</h3>
                 <ul className="beverages-list menu-item-list">
-                  {menuItems.beverages.map((beverage, index) => (
-                    <li key={index}>{beverage}</li>
+                  {menuItems.beverages.map((item, index) => (
+                    <li key={index}>
+                      {item.name} - {dollarFormat.format(item.price)}
+                    </li>
                   ))}
                 </ul>
               </div>
               <div className="pastries-container menu-category-container">
                 <h3 className="menu-category-title">Pastries</h3>
                 <ul className="pastries-list menu-item-list">
-                  {menuItems.pastries.map((pastry, index) => (
-                    <li key={index}>{pastry}</li>
+                  {menuItems.pastries.map((item, index) => (
+                    <li key={index}>
+                      {item.name} - {dollarFormat.format(item.price)}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -81,16 +86,20 @@ function Menu() {
               <div className="breakfast-container menu-category-container">
                 <h3 className="menu-category-title">Breakfast</h3>
                 <ul className="breakfast-list menu-item-list">
-                  {menuItems.breakfast.map((breakfast, index) => (
-                    <li key={index}>{breakfast}</li>
+                  {menuItems.breakfast.map((item, index) => (
+                    <li key={index}>
+                      {item.name} - {dollarFormat.format(item.price)}
+                    </li>
                   ))}
                 </ul>
               </div>
               <div className="lunch-container menu-category-container">
                 <h3 className="menu-category-title">Lunch</h3>
                 <ul className="lunch-list menu-item-list">
-                  {menuItems.lunch.map((lunch, index) => (
-                    <li key={index}>{lunch}</li>
+                  {menuItems.lunch.map((item, index) => (
+                    <li key={index}>
+                      {item.name} - {dollarFormat.format(item.price)}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -99,8 +108,10 @@ function Menu() {
               <div className="desserts-container menu-category-container">
                 <h3 className="menu-category-title">Desserts</h3>
                 <ul className="desserts-list menu-item-list">
-                  {menuItems.desserts.map((desserts, index) => (
-                    <li key={index}>{desserts}</li>
+                  {menuItems.desserts.map((item, index) => (
+                    <li key={index}>
+                      {item.name} - {dollarFormat.format(item.price)}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -108,8 +119,10 @@ function Menu() {
               <div className="specialty-drinks-container menu-category-container">
                 <h3 className="menu-category-title">Specialty Drinks</h3>
                 <ul className="specialty-drinks-list menu-item-list">
-                  {menuItems.specialtyDrinks.map((drink, index) => (
-                    <li key={index}>{drink}</li>
+                  {menuItems.specialtyDrinks.map((item, index) => (
+                    <li key={index}>
+                      {item.name} - {dollarFormat.format(item.price)}
+                    </li>
                   ))}
                 </ul>
               </div>
