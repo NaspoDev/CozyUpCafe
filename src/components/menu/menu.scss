@@ -76,8 +76,8 @@
     p,
     a,
     li {
-      @include font-Menu;
-      font-size: large;
+      @include font-Menu-Regular;
+      font-size: 20px;
     }
 
     // General menu-list element styles
@@ -122,7 +122,7 @@
 
           .menu-category-title {
             padding-bottom: 10px;
-            @include font-Menu;
+            @include font-Menu-Bold;
             font-size: 28px;
 
             width: fit-content;
@@ -132,13 +132,12 @@
             &::before {
               content: "";
               position: absolute;
-              // top: 40%;
-              top: 0;
+              bottom: 22%;
               left: 0;
               width: 110%;
-              height: 90%;
-              // height: 40%;
+              height: 10%;
               background-color: rgba(184, 115, 51, 0.3);
+              // background-color: $theme-color-copper;
               z-index: -1;
             }
           }

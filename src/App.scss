@@ -41,8 +41,16 @@ html {
   font-style: normal;
 }
 
-@mixin font-Menu {
+// Menu page fonts (used for menu paper design)
+
+@mixin font-Menu-Regular {
   font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-Menu-Bold {
+  font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-style: normal;
 }

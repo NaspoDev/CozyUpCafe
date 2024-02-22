@@ -151,7 +151,7 @@ button:hover {
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: large;
+  font-size: 20px;
 }
 .menu .menu-list .menu-section {
   width: 100%;
@@ -189,7 +189,7 @@ button:hover {
 }
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-category-title {
   padding-bottom: 10px;
-  font-family: "Handlee", cursive;
+  font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 28px;
@@ -201,10 +201,10 @@ button:hover {
 .menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-category-title::before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 22%;
   left: 0;
   width: 110%;
-  height: 90%;
+  height: 10%;
   background-color: rgba(184, 115, 51, 0.3);
   z-index: -1;
 }
