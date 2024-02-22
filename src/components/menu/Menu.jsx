@@ -6,6 +6,11 @@ import assortedPastries from "../../assets/product_images/assorted_pastries2.jpg
 import turkeySandwich from "../../assets/product_images/turkey_sandwich.jpg";
 
 function Menu() {
+  const dollarFormat = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "CAD",
+  });
+
   return (
     <div className="menu">
       <div className="heading-area">
