@@ -38,8 +38,10 @@
 
     .hero-bg-image {
       width: 100%;
+      height: 100%;
       position: absolute;
-      top: -260px;
+      object-fit: cover;
+      top: 0;
       left: 0;
       z-index: -2;
     }
