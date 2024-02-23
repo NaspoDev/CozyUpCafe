@@ -4,39 +4,47 @@
 
 .footer {
   width: 100%;
-  height: 200px;
+  height: 220px;
   padding: 0px 25%;
   background-color: $theme-color-maroon;
 
   .inner-footer {
     height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
 
-    .footer-logo {
-      width: 135px;
-    }
+    .footer-content {
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      align-items: center;
+      justify-items: center;
 
-    .right-side-content {
-      height: 100%;
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 20px;
+      .footer-logo {
+        width: 135px;
+      }
 
-      .links-container {
+      .company-name {
+        font-size: 32px;
+      }
+
+      .right-side-content {
+        height: 100%;
+        width: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
 
         .nav-list {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           align-items: flex-start;
           justify-content: space-between;
+          gap: 30px;
 
           li .router-link {
             transition: all 0.3s;
@@ -50,13 +58,23 @@
 
         .socials-container {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           justify-content: center;
-          gap: 20px;
+          gap: 50px;
           img {
             width: 30px;
           }
         }
+      }
+    }
+
+    .copyright-and-credits {
+      @include font-Light;
+      font-size: 14px;
+
+      .naspodev-link {
+        @include font-Light;
+        text-decoration: underline;
       }
     }
   }

@@ -86,55 +86,76 @@ button:hover {
 
 .footer {
   width: 100%;
-  height: 200px;
+  height: 220px;
   padding: 0px 25%;
   background-color: #9a4444;
 }
 .footer .inner-footer {
   height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.footer .inner-footer .footer-logo {
+.footer .inner-footer .footer-content {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.footer .inner-footer .footer-content .footer-logo {
   width: 135px;
 }
-.footer .inner-footer .right-side-content {
+.footer .inner-footer .footer-content .company-name {
+  font-size: 32px;
+}
+.footer .inner-footer .footer-content .right-side-content {
   height: 100%;
   width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
-.footer .inner-footer .right-side-content .links-container {
+.footer .inner-footer .footer-content .right-side-content .nav-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-.footer .inner-footer .right-side-content .links-container .nav-list {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 30px;
 }
-.footer .inner-footer .right-side-content .links-container .nav-list li .router-link {
+.footer .inner-footer .footer-content .right-side-content .nav-list li .router-link {
   transition: all 0.3s;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
-.footer .inner-footer .right-side-content .links-container .nav-list li .router-link:hover {
+.footer .inner-footer .footer-content .right-side-content .nav-list li .router-link:hover {
   color: #d6d46d;
 }
-.footer .inner-footer .right-side-content .links-container .socials-container {
+.footer .inner-footer .footer-content .right-side-content .socials-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
 }
-.footer .inner-footer .right-side-content .links-container .socials-container img {
+.footer .inner-footer .footer-content .right-side-content .socials-container img {
   width: 30px;
+}
+.footer .inner-footer .copyright-and-credits {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}
+.footer .inner-footer .copyright-and-credits .naspodev-link {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: underline;
 }
