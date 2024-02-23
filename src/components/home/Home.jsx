@@ -22,6 +22,8 @@ function Home() {
         </div>
       </section>
 
+      <div className="section-separator"></div>
+
       {/* About Section */}
       <section id="about">
         <div className="about">
