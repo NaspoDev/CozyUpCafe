@@ -227,21 +227,37 @@ button:hover {
   position: relative;
   height: auto;
 }
-.menu .menu-list .menu-section-1 .right-side img {
+.menu .menu-list .menu-section-1 .right-side .coffee-image-wrapper {
   position: absolute;
+  width: 700px;
+  top: 9%;
+  right: 13%;
+  border: 8px dotted #de8f5f;
+  padding: 10px 10px;
 }
-.menu .menu-list .menu-section-1 .right-side .coffee-image {
-  width: 800px;
-  top: 8%;
-  right: 10%;
-  border: 10px solid #212427;
+.menu .menu-list .menu-section-1 .right-side .coffee-image-wrapper .coffee-image {
+  width: 100%;
 }
 .menu .menu-list .menu-section-1 .right-side .assorted-pastries-image {
+  position: absolute;
   height: 400px;
-  bottom: 5%;
-  left: -8%;
-  border: 20px solid #faf9f6;
+  bottom: 8%;
+  left: 0%;
+  border: 20px double #faf9f6;
   border-radius: 50%;
+}
+.menu .menu-list .menu-section-2 .left-side {
+  height: auto;
+}
+.menu .menu-list .menu-section-2 .left-side .image-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border: 10px double #212427;
+}
+.menu .menu-list .menu-section-2 .left-side .image-grid img {
+  width: 420px;
+  border: 2px solid #212427;
 }
 .menu .menu-list .large-image-container-1 {
   width: 100%;

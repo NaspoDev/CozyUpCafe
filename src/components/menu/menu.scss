@@ -171,23 +171,45 @@
         position: relative;
         height: auto;
 
-        img {
+        // Wrapper used for border
+        .coffee-image-wrapper {
           position: absolute;
-        }
+          width: 700px;
+          top: 9%;
+          right: 13%;
+          border: 8px dotted $theme-color-copper;
+          padding: 10px 10px;
 
-        .coffee-image {
-          width: 800px;
-          top: 8%;
-          right: 10%;
-          border: 10px solid $text-color-black;
+          .coffee-image {
+            width: 100%;
+          }
         }
 
         .assorted-pastries-image {
+          position: absolute;
           height: 400px;
-          bottom: 5%;
-          left: -8%;
-          border: 20px solid $text-color-white;
+          bottom: 8%;
+          left: 0%;
+          border: 20px double $text-color-white;
           border-radius: 50%;
+        }
+      }
+    }
+
+    .menu-section-2 {
+      .left-side {
+        height: auto;
+
+        .image-grid {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+          border: 10px double $text-color-black;
+
+          img {
+            width: 420px;
+            border: 2px solid $text-color-black;
+          }
         }
       }
     }
