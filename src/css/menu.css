@@ -273,3 +273,145 @@ button:hover {
   position: absolute;
   top: -400px;
 }
+
+@media (max-width: 1700px) {
+  .menu .menu-list .menu-section-1 .left-side {
+    width: 55%;
+  }
+  .menu .menu-list .menu-section-1 .right-side {
+    width: 45%;
+  }
+  .menu .menu-list .menu-section-1 .right-side .coffee-image-wrapper {
+    width: 600px;
+  }
+  .menu .menu-list .menu-section-2 .left-side {
+    width: 40%;
+  }
+  .menu .menu-list .menu-section-2 .left-side .image-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu .menu-list .menu-section-2 .left-side .image-grid .turkey-sandwich-image,
+  .menu .menu-list .menu-section-2 .left-side .image-grid .cheesecake-image {
+    display: none;
+  }
+  .menu .menu-list .menu-section-2 .right-side {
+    width: 60%;
+  }
+}
+@media (max-width: 1500px) {
+  .menu .menu-list .menu-section-1 .left-side {
+    width: 70%;
+  }
+  .menu .menu-list .menu-section-1 .right-side {
+    width: 30;
+  }
+  .menu .menu-list .menu-section-1 .right-side .coffee-image-wrapper {
+    width: 500px;
+    top: 13%;
+  }
+  .menu .menu-list .menu-section-1 .right-side .assorted-pastries-image {
+    height: 300px;
+  }
+  .menu .menu-list .menu-section-2 .left-side {
+    width: 30%;
+    padding-left: 5%;
+  }
+  .menu .menu-list .menu-section-2 .right-side {
+    width: 70%;
+  }
+}
+@media (max-width: 1400px) {
+  .menu .heading-area {
+    text-align: center;
+  }
+  .menu .menu-list .menu-section {
+    justify-content: center;
+  }
+  .menu .menu-list .menu-section-1 .left-side {
+    width: auto;
+  }
+  .menu .menu-list .menu-section-1 .right-side {
+    display: none;
+  }
+  .menu .menu-list .menu-section-2 .left-side {
+    display: none;
+  }
+  .menu .menu-list .menu-section-2 .right-side {
+    width: auto;
+  }
+  .menu .menu-list .large-image-container-1 {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    border-top: 20px solid #212427;
+    border-bottom: 20px solid #212427;
+  }
+  .menu .menu-list .large-image-container-1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 1000px) {
+  .menu .heading-area {
+    height: 300px;
+  }
+  .menu .heading-area .title {
+    font-size: 46px;
+  }
+  .menu .heading-area .subtitle {
+    font-size: 28px;
+  }
+  .menu .heading-area .menu-heading-background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -2;
+  }
+}
+@media (max-width: 700px) {
+  .menu .heading-area .subtitle {
+    font-size: 22px;
+  }
+  .menu .menu-list .menu-section .menu-paper-background {
+    width: 95%;
+    padding: 0px 20px;
+  }
+  .menu .menu-list .menu-section-1 .left-side {
+    width: 100%;
+  }
+  .menu .menu-list .menu-section-2 .right-side {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .menu .heading-area .title {
+    font-size: 42px;
+  }
+  .menu .menu-list .menu-section .menu-paper-background {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 450px) {
+  .menu .menu-list .menu-section .menu-paper-background .menu-paper-heading {
+    font-size: 26px;
+  }
+  .menu .menu-list .menu-section .menu-paper-background .menu-category-container .menu-category-title {
+    font-size: 24px;
+  }
+  .menu .menu-list .menu-section .menu-paper-background .menu-category-container p {
+    font-size: 18px;
+  }
+}
