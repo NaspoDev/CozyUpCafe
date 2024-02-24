@@ -121,3 +121,31 @@
     }
   }
 }
+
+// Responsive Design
+
+@media (max-width: 1500px) {
+  .contact {
+    .content-area {
+      .embedded-map-container {
+        padding-left: 5%;
+
+        .map-wrapper {
+          iframe {
+            width: 500px;
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    height: 1400px;
+    .content-area {
+      flex-direction: column-reverse;
+    }
+  }
+}
