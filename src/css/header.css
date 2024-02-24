@@ -116,3 +116,12 @@ button:hover {
   width: 100%;
   height: 80px;
 }
+
+@media (max-width: 500px) {
+  .header .inner-header {
+    justify-content: center;
+  }
+  .header .inner-header .logo {
+    display: none;
+  }
+}

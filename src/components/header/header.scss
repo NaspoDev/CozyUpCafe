@@ -39,3 +39,16 @@
   width: 100%;
   height: 80px;
 }
+
+// Responsive Design
+
+@media (max-width: 500px) {
+  .header {
+    .inner-header {
+      justify-content: center;
+      .logo {
+        display: none;
+      }
+    }
+  }
+}
