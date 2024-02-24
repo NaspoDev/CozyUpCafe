@@ -52,7 +52,9 @@ function Home() {
             </div>
           </div>
 
-          <img src={coffeeAndPastry} alt="Coffee and Pastry" />
+          <div className="image-wrapper">
+            <img src={coffeeAndPastry} alt="Coffee and Pastry" />
+          </div>
         </div>
       </section>
 

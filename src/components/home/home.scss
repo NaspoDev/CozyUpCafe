@@ -79,7 +79,7 @@
     }
 
     .text-container {
-      width: 50%;
+      width: 45%;
       height: 100%;
       display: flex;
       justify-content: center;
@@ -113,8 +113,15 @@
       }
     }
 
-    img {
+    .image-wrapper {
+      width: auto;
       height: 100%;
+      display: flex;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -126,8 +133,177 @@
 
     img {
       width: 100%;
+      height: 100%;
       position: absolute;
-      top: -700px;
+      object-fit: cover;
+      bottom: 0;
+      left: 0;
+      object-position: bottom;
+    }
+  }
+}
+
+// Responsive Design
+
+@media (max-width: 1700px) {
+  .home {
+    .about {
+      .text-container {
+        width: 50%;
+      }
+
+      .image-wrapper {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .home {
+    .hero {
+      justify-content: center;
+      padding-top: 0;
+
+      .company-name {
+        font-size: 72px;
+      }
+
+      .tagline {
+        font-size: 36px;
+      }
+    }
+
+    .about {
+      .text-container {
+        width: 50%;
+      }
+
+      .image-wrapper {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .home {
+    .hero {
+      .company-name {
+        font-size: 60px;
+      }
+
+      .tagline {
+        font-size: 32px;
+      }
+    }
+
+    .about {
+      flex-direction: column;
+      height: auto;
+
+      .text-container {
+        width: 100%;
+        height: auto;
+
+        .border-div {
+          padding: 5% 5%;
+        }
+      }
+
+      .image-wrapper {
+        width: 100%;
+      }
+    }
+
+    .image-display {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .home {
+    .hero {
+      .tagline {
+        font-size: 28px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    .hero {
+      .tagline {
+        font-size: 28px;
+      }
+    }
+
+    .about {
+      .text-container {
+        .border-div {
+          .about-us-title {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home {
+    .hero {
+      .company-name {
+        font-size: 48px;
+      }
+      .tagline {
+        font-size: 28px;
+      }
+    }
+
+    .about {
+      .text-container {
+        .border-div {
+          .about-us-title {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .home {
+    .hero {
+      .tagline {
+        font-size: 24px;
+        padding: 0 2%;
+      }
+    }
+
+    .about {
+      .text-container {
+        height: auto;
+        padding: 15px 15px;
+
+        .border-div {
+          .about-us-title {
+            font-size: 30px;
+          }
+        }
+      }
+
+      .image-wrapper {
+        width: 100%;
+      }
+    }
+
+    .image-display {
+      height: 300px;
     }
   }
 }
