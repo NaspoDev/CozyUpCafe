@@ -204,9 +204,41 @@ button:hover {
 }
 @media (max-width: 1200px) {
   .contact {
-    height: 1400px;
+    height: 1200px;
+  }
+  .contact .background-image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact .heading-container {
+    height: 12%;
   }
   .contact .content-area {
     flex-direction: column-reverse;
+    gap: 100px;
+  }
+  .contact .content-area .embedded-map-container {
+    padding-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .contact {
+    padding: 0 2%;
+  }
+  .contact .heading-container h1 {
+    font-size: 40px;
+  }
+  .contact .content-area .embedded-map-container {
+    width: 100%;
+  }
+  .contact .content-area .embedded-map-container .map-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .contact .content-area .embedded-map-container .map-wrapper iframe {
+    width: 100%;
+    height: 400px;
   }
 }
